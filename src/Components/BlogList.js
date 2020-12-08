@@ -7,7 +7,7 @@ function BlogList({ blogs }) {
       return <BlogDetail key={blog.id} blog={blog} />;
     });
 
-    return <div className='ui segment'>{renderedList}</div>;
+    return <div>{renderedList}</div>;
   }
 }
 

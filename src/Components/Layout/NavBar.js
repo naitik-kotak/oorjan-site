@@ -9,7 +9,9 @@ function NavBar() {
   return (
     <nav>
       <div className='item'>
-        <img className='image' style={logoStyle} src={logo} alt='logo' />
+        <a href='https://www.oorjan.com/home' target='_blank' rel='noreferrer'>
+          <img className='image' style={logoStyle} src={logo} alt='logo' />
+        </a>
       </div>
     </nav>
   );

@@ -9,19 +9,28 @@ function Searchbar({ onTermSearch }) {
 
   const onFormSubmit = (e) => {
     e.preventDefault();
-  
     onTermSearch(term);
+    setTerm('');
+  };
+
+  const formStyle = {
+    marginBottom: '2rem',
   };
 
   return (
-    <form className='ui form' onSubmit={onFormSubmit}>
+    <form style={formStyle} className='ui form' onSubmit={onFormSubmit}>
       <div className='field'>
         <label>Search here</label>
-        <input type='text' value={term} onChange={onTermChange} />
+        <input
+          type='text'
+          value={term}
+          placeholder='Eg) Panel Cost, Solar Inverters'
+          onChange={onTermChange}
+        />
       </div>
       <div className='ui-inverted-segment'>
-        <button className='ui inverted green button' onClick={onFormSubmit}>
-          Find Green Solution
+        <button className='ui  inverted green button' onClick={onFormSubmit}>
+          Find Oorjan Solutions
         </button>
       </div>
     </form>

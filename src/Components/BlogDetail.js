@@ -7,7 +7,7 @@ function BlogDetail({ blog }) {
   };
   return (
     <div className='ui center aligned segment'>
-      <a style={style} href={blog.url} target='_blank'>
+      <a style={style} href={blog.url} target='_blank' rel='noreferrer'>
         {blog.title}
       </a>
     </div>
